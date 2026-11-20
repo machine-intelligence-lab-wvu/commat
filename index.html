@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Machine Intelligence Lab | West Virginia University</title>
+  <meta name="description" content="Machine Intelligence Lab (MILab) at West Virginia University. Projects and live demos, including CoMMat: few-step crystal structure generation and prediction.">
+  <meta property="og:title" content="Machine Intelligence Lab">
+  <meta property="og:description" content="Projects and live demos from MILab at West Virginia University, including the CoMMat crystal generator.">
+  <meta property="og:url" content="https://themilab.org/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="masthead wrap">
+    <a class="wordmark" href="./">MILab</a>
+    <nav aria-label="Main">
+      <a href="commat/">CoMMat demo</a>
+      <a href="https://github.com/machine-intelligence-lab-wvu">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div>
+        <h1>Machine Intelligence Lab</h1>
+        <p class="affil">West Virginia University</p>
+        <a class="button" href="commat/">Try the CoMMat demo</a>
+      </div>
+      <figure class="crystal">
+        <svg id="crystal" viewBox="0 0 560 480" role="img" aria-labelledby="crystal-title">
+          <title id="crystal-title">A crystal structure from the CoMMat gallery</title>
+        </svg>
+        <figcaption>
+          <span><strong id="crystal-name">Tb<sub>3</sub>PbC</strong>, from the CoMMat gallery</span>
+          <ul class="legend" id="crystal-legend" aria-label="Elements"></ul>
+          <button type="button" class="text-button" id="crystal-next">Show another crystal</button>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="projects wrap" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <article class="project">
+        <h3>CoMMat</h3>
+        <div>
+          <p>Generates crystal structures in a few network evaluations. Invent new crystals or predict a structure from a chemical formula, then relax and screen the results against the Materials Project, download batches or call the REST API.</p>
+          <p class="links">
+            <a class="button" href="commat/">Open the live demo</a>
+            <a href="https://imranrimon-commat.hf.space/model-card.html">Model card</a>
+            <a href="https://imranrimon-commat.hf.space/docs">API docs</a>
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-foot wrap">
+    <p>Machine Intelligence Lab, West Virginia University<a href="https://github.com/machine-intelligence-lab-wvu">GitHub</a><a href="https://huggingface.co/spaces/imranrimon/CoMMat">CoMMat on Hugging Face</a></p>
+  </footer>
+  <script src="assets/crystals.js" defer></script>
+</body>
+</html>
