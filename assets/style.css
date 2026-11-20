@@ -109,7 +109,7 @@ a:hover { text-decoration-thickness: 2px; }
   flex: 0 0 auto; display: flex; align-items: center; gap: 20px;
   padding: 10px 20px; border-bottom: 1px solid var(--rule); background: var(--paper);
 }
-.demo-name { color: var(--ink-2); font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.demo-name { margin: 0; color: var(--ink-2); font-size: 15px; font-weight: 400; line-height: inherit; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .demo-bar nav { margin-left: auto; display: flex; gap: 20px; font-size: 15px; white-space: nowrap; }
 .demo-frame-wrap { position: relative; flex: 1 1 auto; }
 .demo-loading { position: absolute; inset: 0; display: grid; place-items: center; padding: 16px; text-align: center; color: var(--ink-2); }
